@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+// Project 2: Color Images. This project defines several classes that allow 
+//the user to manipulate color images.
+//This is the 80 character limit:
+//---------------------------------------------------------------------------- 
+
+//class prototypes
+
+int main()
+{
+  cout << "HELLO" << endl;
+  return 0;
+}

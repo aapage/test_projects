@@ -1,0 +1,127 @@
+House Value: 100000 loc: [120,220] color: (255,0,0)
+School #Students: 252 loc: [50,50] color: (63,63,255)
+Road Len: 75 Lanes: 4 Runs: Vertical loc: [5,5] color: (127,127,127)
+Road Len: 212 Lanes: 3 Runs: Horizontal loc: [160,20] color: (127,127,127)
+School #Students: 516 loc: [151,115] color: (63,63,255)
+Park Acres: 350 loc: [90,280] color: (0,255,0)
+Road Len: 53 Lanes: 2 Runs: Horizontal loc: [100,250] color: (127,127,127)
+Park Acres: 515 loc: [18,281] color: (0,255,0)
+School #Students: 1266 loc: [100,150] color: (63,63,255)
+Road Len: 190 Lanes: 4 Runs: Vertical loc: [1,142] color: (127,127,127)
+House Value: 300000 loc: [5,135] color: (255,0,0)
+---------------------------------------
+Drawing entity #0 type: House
+Entity #0: drawOnMap completed successfully!
+---------------------------------------
+Drawing entity #1 type: School
+Entity #1: drawOnMap completed successfully!
+---------------------------------------
+Drawing entity #2 type: Road
+Entity #2: drawOnMap completed successfully!
+---------------------------------------
+Drawing entity #3 type: Road
+Entity #3: drawOnMap completed successfully!
+---------------------------------------
+Drawing entity #4 type: School
+Entity #4: drawOnMap completed successfully!
+---------------------------------------
+Drawing entity #5 type: Park
+Entity #5: drawOnMap completed successfully!
+---------------------------------------
+Drawing entity #6 type: Road
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [100,300] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [100,301] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [100,302] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [101,300] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [101,301] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [101,302] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [102,300] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [102,301] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [102,302] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [103,300] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [103,301] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [103,302] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [104,300] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [104,301] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [104,302] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [105,300] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [105,301] - out of bounds: 200, 300
+RectangularEntityClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [105,302] - out of bounds: 200, 300
+Entity #6: Caught a map exception!
+  MapException: Attempted to draw out of bounds
+---------------------------------------
+Drawing entity #7 type: Park
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-3,281] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,275] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,276] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,277] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,278] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,279] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,280] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,281] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,282] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,283] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,284] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,285] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,286] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-2,287] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,273] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,274] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,275] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,276] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,277] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,278] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,279] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,280] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,281] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,282] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,283] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,284] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,285] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,286] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,287] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,288] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [-1,289] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [10,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [11,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [12,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [12,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [13,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [13,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [14,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [14,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [15,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [15,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [16,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [16,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [17,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [17,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [18,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [18,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [18,302] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [19,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [19,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [20,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [20,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [21,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [21,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [22,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [22,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [23,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [23,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [24,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [24,301] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [25,300] - out of bounds: 200, 300
+ParkClass::drawOnMap caught exception: MapException: ERROR: Unable to set pixel [26,300] - out of bounds: 200, 300
+Entity #7: Caught a map exception!
+  MapException: Attempted to draw out of bounds
+---------------------------------------
+Drawing entity #8 type: School
+Entity #8: drawOnMap completed successfully!
+---------------------------------------
+Drawing entity #9 type: Road
+Entity #9: drawOnMap completed successfully!
+---------------------------------------
+Drawing entity #10 type: House
+Entity #10: drawOnMap completed successfully!
+Writing map to output image: outMap.ppm

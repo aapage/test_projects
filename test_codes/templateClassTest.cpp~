@@ -1,0 +1,21 @@
+#include <iostream>
+#include <type_traits>
+
+template <typename T1, typename T2>
+bool isDerived()
+{
+  bool result;
+  result = std::is_base_of<T1, T2>::value;
+  return result;
+}
+
+class A {};
+class B : A {};
+
+
+int main()
+{
+  bool test  = isDerived< B , A >();
+  std::cout << test << std::endl;
+  return 0;
+}

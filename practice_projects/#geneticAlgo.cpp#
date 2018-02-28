@@ -1,0 +1,177 @@
+#include <iostream>
+#include<cstdlib>
+#include<vector>
+#include<algorithm>
+
+const int NUM_GENES = 8;
+
+struct genome
+{
+  bool dna[NUM_GENES];
+  float score;
+  
+  genome(){}
+  genome(bool a0, bool a1, bool a2, bool a3, bool a4 )
+  {
+    dna[0] = a0;
+    dna[1] = a1;
+    dna[2] = a2;
+    dna[3] = a3;
+    dna[4] = a4;
+  }
+  void randomize()
+  {
+    for (int i = 0; i < NUM_GENES; i++)
+      {
+	dna[i] = rand()%2; 
+      }
+  }
+
+  void print()
+  {
+    for (int i = 0; i < NUM_GENES; i++)
+      {
+	std::cout << dna[i] << " " ;
+      }
+    std::cout << "\n";
+  }
+  
+  void setScore( genome key)
+  {
+    float newScore = 0.0;
+    for (int i = 0; i < NUM_GENES; i++)
+      {
+	if (dna[i] == key.dna[i]) {newScore++;}
+      }
+    //get score as percentage
+   M_GENES*100;
+    score = newScore;
+  }
+
+  //comparison operator<
+  bool operator < (const genome &a) const
+  {
+    return score < a.score;
+  }
+  
+};
+
+bool compareGenomePtr(genome* &a1, genome* &a2)
+{
+  return a1->score < a2->score;
+}
+
+genome mate(genome p1, genome p2)
+{
+  int splitIndex = rand()%(NUM_GENES+1);
+  genome child;
+  
+  for (int i = 0; i < splitIndex; i++)
+    {
+      child.dna[i] = p1.dna[i];
+    }
+ for (int i = splitIndex; i >= splitIndex && i < NUM_GENES; i++)
+    {
+      child.dna[i] = p2.dna[i];
+    }
+  return child;
+}
+
+void generatePopulation(int populationSize, std::vector<genome*>  &population)
+{
+  for (int i = 0; i < populationSize; i++)
+    {
+      population.push_back(new genome);
+      population[i]->randomize();
+    }  
+  
+}
+
+
+
+int main()
+{
+  srand(0);
+
+  //set key for goal
+  genome key;
+  key.randomize();
+  std::cout<< "KEY: ";
+  key.print();
+
+  //generate inital population
+  int populationSize = 5;
+
+  std::vector<genome*> population;
+  
+  generatePopulation(populationSize, population);
+  std::cout<< "Initial Population: " << populationSize << "\n"; 
+
+  float maxScore = 0;
+  int maxGeneration = 10;
+  int currentGeneration = 0;
+  while (maxScore < 100 && currentGeneration < maxGeneration )
+    {
+      //update generation number
+      currentGeneration++;
+      std::cout << "Generation #" << currentGeneration << "\n";
+
+      //evaluate scores and sort population based on most fit
+      for (int i = 0; i < population.size(); i++)
+	{
+	  population[i]->setScore(key);
+	  population[i]->print();
+	  if (maxScore < population[i]->score)
+	    {maxScore = population[i]->score;}  
+	}
+      std::cout << "Best Score: " << maxScore << "\n";
+      
+      //sort population list and reverse it to get it largest to smallest      
+      std::sort(population.begin(), population.end(), compareGenomePtr );
+      std::reverse(population.begin(), population.end());
+      //print out current generation sorted
+      std::cout<< "\nPopulation: \n";
+      for (int i = 0; i < population.size(); i++)
+	{
+	  std::cout<< "Score: " << population[i]->score << " - ";
+	  population[i]->print();
+	}
+      
+      //if not solution found yet, mate current population
+
+
+    }
+
+
+  /*
+  genome p1;
+  
+  p1.randomize();
+  p1.print();
+  
+  genome p2;
+  p2.randomize();
+  p2.print();
+
+  genome child;
+  
+  genome key;
+  key.randomize();
+  key.randomize();
+  for (int i = 0; i < 3; i++)
+    {
+      child = mate(p1,p2);
+      //child = p2;
+      child.print();
+      child.setScore(key);
+
+      std::cout <<  child.score << "\n";
+    }
+
+  std::cout << "KEY: " ;
+  key.print();
+  */
+  
+  
+  return 0;
+}
